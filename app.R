@@ -16,8 +16,13 @@ shinyConfig <- initializeModuleConfig() |>
   ) |>
   addModuleConfig(
     createDefaultCharacterizationConfig()
-  ) 
-
+  ) |>
+  addModuleConfig(
+    createDefaultPredictionConfig()
+  ) |>
+  addModuleConfig(
+    createDefaultEstimationConfig()
+  )
 
 cli::cli_h1("Starting shiny server")
 serverStr <- paste0(Sys.getenv("shinydbServer"), "/", Sys.getenv("shinydbDatabase"))
