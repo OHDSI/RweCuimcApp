@@ -49,7 +49,7 @@ RUN --mount=type=secret,id=build_github_pat \
     R -e "remotes::install_github('OHDSI/ResultModelManager'); if (!require('ResultModelManager', quietly = TRUE)) stop('Installation of ResultModelManager failed')" && \
     R -e "remotes::install_github('OHDSI/OhdsiReportGenerator'); if (!require('OhdsiReportGenerator', quietly = TRUE)) stop('Installation of OhdsiReportGenerator failed')" && \   
     R -e "remotes::install_github('OHDSI/OhdsiShinyModules'); if (!require('OhdsiShinyModules', quietly = TRUE)) stop('Installation of OhdsiShinyModules failed')" && \
-    R -e "remotes::install_github('OHDSI/ShinyAppBuilder'); if (!require('ShinyAppBuilder', quietly = TRUE)) stop('Installation of ShinyAppBuilder failed')" && \
+    R -e "remotes::install_github('OHDSI/OhdsiShinyAppBuilder'); if (!require('ShinyAppBuilder', quietly = TRUE)) stop('Installation of OhdsiShinyAppBuilder failed')" && \
     cp /tmp/Renviron /usr/local/lib/R/etc/Renviron
 
 ENV DATABASECONNECTOR_JAR_FOLDER /root
