@@ -1,5 +1,5 @@
 library(OhdsiShinyModules)
-library(ShinyAppBuilder)
+library(OhdsiShinyAppBuilder)
 
 shinyConfig <- initializeModuleConfig() |>
   addModuleConfig(
